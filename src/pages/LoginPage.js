@@ -13,7 +13,7 @@ const LoginPage = () => {
   }
 
   return (
-    <div>
+    <div className='page_container'>
       <LoginForm />
     </div>
   )

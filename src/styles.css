@@ -10,3 +10,8 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
 }
+
+.page_container {
+  width: 100vw;
+  display: flex;
+}
