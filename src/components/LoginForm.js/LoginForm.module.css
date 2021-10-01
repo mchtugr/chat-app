@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 15px;
+  width: 400px;
+  margin-bottom: 10px;
+  background-color: #f3f3f4;
+  border: none;
+}
+
+.input:focus {
+  outline-color: #7cc4fc;
+}
+
+.btn {
+  padding: 15px;
+  width: 430px;
+  border: none;
+  background-color: #6bb3fb;
+  text-transform: uppercase;
+  color: #fff;
+}
