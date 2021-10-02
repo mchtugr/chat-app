@@ -6,6 +6,10 @@
   border-bottom: 1px solid #d4d4d4;
 }
 
+.container:last-child {
+  border: none;
+}
+
 .img_container {
   flex: 1;
 }
