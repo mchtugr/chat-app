@@ -5,7 +5,8 @@ import data from './mock-users.json'
 
 const App = () => {
   const [user, setUser] = useState(null)
-  const [selectedFriend, setSelectedFriend] = useState({})
+  const [friendList, setFriendList] = useState(data.users)
+  const [selectedFriend, setSelectedFriend] = useState(friendList[0])
 
   const login = (username) => {
     setUser(username)
@@ -17,8 +18,27 @@ const App = () => {
     localStorage.removeItem('username')
   }
 
-  const onSelectedFriend = (friend) => {
-    setSelectedFriend(selectedFriend)
+  const onSelectedFriend = (id) => {
+    const currentFriend = data.users.find((friend) => friend.id === id)
+    setSelectedFriend(currentFriend)
+  }
+
+  const sendMessage = (id, message) => {
+    const updatedFriendList = friendList.map((friend) => {
+      if (friend.id === id) {
+        setSelectedFriend({
+          ...friend,
+          messages: [...friend.messages, message],
+        })
+        return { ...friend, messages: [...friend.messages, message] }
+      } else {
+        return friend
+      }
+    })
+
+    setFriendList(updatedFriendList)
+    const messageContainer = document.querySelector('.message_container')
+    messageContainer.scrollTop = messageContainer.scrollHeight
   }
 
   useEffect(() => {
@@ -38,7 +58,8 @@ const App = () => {
         logout,
         selectedFriend,
         onSelectedFriend,
-        friendList: data.users,
+        friendList,
+        sendMessage,
       }}
     >
       <Routes />

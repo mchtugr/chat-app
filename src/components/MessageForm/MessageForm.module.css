@@ -1,2 +1,41 @@
 .container {
+  height: 60px;
+  text-align: center;
+  border-top: 1px solid #d4d4d4;
+  background-color: #fff;
+  display: flex;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.input_container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #f3f3f4;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #6bb3fb;
+  border: none;
+  color: #fff;
+  margin-left: 10px;
 }

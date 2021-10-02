@@ -2,12 +2,17 @@
   "users": [
     {
       "id": "af57c386-0f01-4088-b1cf-a1d87615d4e0",
-      "first_name": "Luke",
-      "last_name": "Skywalker",
-      "username": "luke",
+      "first_name": "Chandler",
+      "last_name": "Bing",
+      "username": "chandler",
       "messages": [
         {
-          "id": "7f3a6a87-278b-4d1b-8b30-c30c04f81ecb",
+          "id": "7f3a6a87-278b-4d1b-8b30-c30c04f81ec1",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+          "sender": "current_user"
+        },
+        {
+          "id": "7f3a6a87-278b-4d1b-8b30-c30c04f81eca",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
           "sender": "af57c386-0f01-4088-b1cf-a1d87615d4e0"
         },
@@ -18,21 +23,26 @@
         },
         {
           "id": "21ddbee6-242a-4cb9-897a-b0bb36d6e85d",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          "text": "Hi, I’m Chandler. I make jokes when I’m uncomfortable.",
           "sender": "af57c386-0f01-4088-b1cf-a1d87615d4e0"
         }
       ]
     },
     {
       "id": "001bb92c-fd82-4c6b-a3e2-76102557d6f0",
-      "first_name": "Eric",
-      "last_name": "Berry",
-      "username": "eric",
+      "first_name": "Monica",
+      "last_name": "Geller",
+      "username": "monica",
       "messages": [
         {
           "id": "a4e9d5dc-525a-4c8e-9d3a-aa3a2afa65dd",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
           "sender": "001bb92c-fd82-4c6b-a3e2-76102557d6f0"
+        },
+        {
+          "id": "7f3a6a87-278b-4d1b-8b30-c30c04f81ecc",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+          "sender": "current_user"
         },
         {
           "id": "e5485917-a022-4bc4-b057-6c55bf10f815",
@@ -48,14 +58,71 @@
     },
     {
       "id": "7f5eb1ce-103a-4bce-b547-2f058872b9e9",
-      "first_name": "Brianna",
-      "last_name": "Bishop",
-      "username": "brianna",
+      "first_name": "Rachel",
+      "last_name": "Green",
+      "username": "rachel",
       "messages": [
+        {
+          "id": "7f3a6a87-278b-4d1b-8b30-c30c04f81ece",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+          "sender": "current_user"
+        },
         {
           "id": "4dee4676-f40e-4671-876d-f7f910e4c0d2",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
           "sender": "7f5eb1ce-103a-4bce-b547-2f058872b9e9"
+        }
+      ]
+    },
+    {
+      "id": "d3eae56d-0c14-4045-b5e2-3ccd3c95e873",
+      "first_name": "Phoebe",
+      "last_name": "Buffay",
+      "username": "phoebe",
+      "messages": [
+        {
+          "id": "4dee4676-f40e-4671-876d-f7f910e4c0d2",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
+          "sender": "d3eae56d-0c14-4045-b5e2-3ccd3c95e873"
+        }
+      ]
+    },
+    {
+      "id": "70742200-46b4-40fe-b93e-a73a48a92a0f",
+      "first_name": "Joey",
+      "last_name": "Tribbiani",
+      "username": "joey",
+      "messages": [
+        {
+          "id": "4dee4676-f40e-4671-876d-f7f910e4c0d2",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
+          "sender": "70742200-46b4-40fe-b93e-a73a48a92a0f"
+        }
+      ]
+    },
+    {
+      "id": "517f897a-a8b6-4664-8943-ac8bd97efff4",
+      "first_name": "Ross",
+      "last_name": "Geller",
+      "username": "ross",
+      "messages": [
+        {
+          "id": "4dee4676-f40e-4671-876d-f7f910e4c0d2",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
+          "sender": "517f897a-a8b6-4664-8943-ac8bd97efff4"
+        }
+      ]
+    },
+    {
+      "id": "350f8a89-aa6d-4127-afa5-d6c54fd5b2be",
+      "first_name": "Mike",
+      "last_name": "Hannigan",
+      "username": "mike",
+      "messages": [
+        {
+          "id": "4dee4676-f40e-4671-876d-f7f910e4c0d2",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
+          "sender": "350f8a89-aa6d-4127-afa5-d6c54fd5b2be"
         }
       ]
     }

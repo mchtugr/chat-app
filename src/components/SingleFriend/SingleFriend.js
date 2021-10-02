@@ -1,18 +1,27 @@
-import React from 'react'
-import faker from 'faker'
+import React, { useContext } from 'react'
 import styles from './SingleFriend.module.css'
+import UserContext from '../../context/userContext'
+import { v4 as uuid } from 'uuid'
 
 const SingleFriend = (props) => {
   const { friend } = props
-  const imgUrl = faker.image.people()
+  const { onSelectedFriend } = useContext(UserContext)
+  const fullName = friend.first_name + ' ' + friend.last_name
   const lastMessage = friend.messages[friend.messages.length - 1].text
+  const handleClick = (id) => {
+    onSelectedFriend(id)
+  }
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={() => handleClick(friend.id)}>
       <div className={styles.img_container}>
-        <img src={imgUrl} alt='avatar' className={styles.avatar} />
+        <img
+          src={`/avatars/${friend.username}.jpeg`}
+          alt='avatar'
+          className={styles.avatar}
+        />
       </div>
       <div className={styles.text_container}>
-        <div className={styles.username}>{friend.first_name}</div>
+        <div className={styles.username}>{fullName}</div>
         <div className={styles.last_message}>
           {lastMessage.length <= 25
             ? lastMessage

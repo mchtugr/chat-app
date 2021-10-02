@@ -4,7 +4,7 @@ import UserContext from '../context/userContext'
 import { Redirect } from 'react-router'
 
 const StartPage = () => {
-  const { user, friendList } = useContext(UserContext)
+  const { user } = useContext(UserContext)
   if (!user) {
     return <Redirect to='/login' />
   }

@@ -7,6 +7,7 @@ const UserContext = createContext({
   onSelectedFriend: () => {},
   login: () => {},
   logout: () => {},
+  sendMessage: () => {},
 })
 
 export default UserContext

@@ -5,7 +5,6 @@ import styles from './FriendsList.module.css'
 
 const FriendsList = () => {
   const { friendList } = useContext(UserContext)
-  console.log(friendList)
   return (
     <div className={styles.container}>
       {friendList.map((friend) => (

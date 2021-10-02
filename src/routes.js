@@ -1,11 +1,11 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
-  Redirect,
-  Link,
+  // Redirect,
+  // Link,
   Switch,
   Route,
-  useLocation,
+  // useLocation,
 } from 'react-router-dom'
 
 import ChatPage from './pages/ChatPage'

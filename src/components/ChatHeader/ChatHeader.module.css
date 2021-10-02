@@ -1,2 +1,33 @@
 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 70px;
+  padding: 0 25px;
+}
+
+.user_detail_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.img_container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.username {
+  margin-left: 10px;
+  font-size: 16px;
 }
