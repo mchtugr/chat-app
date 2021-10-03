@@ -24,19 +24,27 @@ const App = () => {
   }
 
   const sendMessage = (id, message) => {
-    const updatedFriendList = friendList.map((friend) => {
-      if (friend.id === id) {
-        setSelectedFriend({
-          ...friend,
-          messages: [...friend.messages, message],
-        })
-        return { ...friend, messages: [...friend.messages, message] }
-      } else {
-        return friend
-      }
-    })
+    const targetFriend = friendList.find((friend) => friend.id === id)
+    const updatedSelectedFriend = {
+      ...targetFriend,
+      messages: [...targetFriend.messages, message],
+    }
+    const restOfFriends = friendList.filter((friend) => friend.id !== id)
+    setFriendList([updatedSelectedFriend, ...restOfFriends])
+    setSelectedFriend(updatedSelectedFriend)
+    // const updatedFriendList = friendList.map((friend) => {
+    //   if (friend.id === id) {
+    //     setSelectedFriend({
+    //       ...friend,
+    //       messages: [...friend.messages, message],
+    //     })
+    //     return { ...friend, messages: [...friend.messages, message] }
+    //   } else {
+    //     return friend
+    //   }
+    // })
 
-    setFriendList(updatedFriendList)
+    // setFriendList(updatedFriendList)
     const messageContainer = document.querySelector('.message_container')
     messageContainer.scrollTop = messageContainer.scrollHeight + 300
   }
