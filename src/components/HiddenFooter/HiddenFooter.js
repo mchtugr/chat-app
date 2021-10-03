@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import styles from './HiddenFooter.module.css'
 import { BsInfoSquareFill } from 'react-icons/bs'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
-import { GrClose } from 'react-icons/gr'
+import { AiOutlineClose } from 'react-icons/ai'
 
 const HiddenFooter = () => {
   const footerRef = useRef()
@@ -24,7 +24,7 @@ const HiddenFooter = () => {
 
       <div ref={footerRef} className={styles.hidden_area}>
         <span onClick={closeFooter} className={styles.close_btn}>
-          <GrClose />
+          <AiOutlineClose size='20px' />
         </span>
         <div className={styles.writer}>
           Coded by <strong>Mucahit Ugur</strong>{' '}

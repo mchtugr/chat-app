@@ -8,6 +8,7 @@ const UserContext = createContext({
   login: () => {},
   logout: () => {},
   sendMessage: () => {},
+  onSearch: () => {},
 })
 
 export default UserContext

@@ -9,9 +9,11 @@
   display: block;
   width: 90%;
   display: flex;
+  align-items: center;
   margin: 10px 0;
   border: 1px solid #d4d4d4;
   justify-content: center;
+  position: relative;
 }
 
 .input {
@@ -23,4 +25,13 @@
 }
 .input:focus {
   outline: none;
+}
+
+.delete_btn {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }

@@ -36,6 +36,22 @@ const App = () => {
     messageContainer.scrollTop = messageContainer.scrollHeight + 300
   }
 
+  const onSearch = (keyword) => {
+    if (!keyword) {
+      setFriendList(data.users)
+    } else {
+      const updatedFriendList = friendList.filter((friend) => {
+        const fullName = friend.first_name + ' ' + friend.last_name
+        const myRegex = new RegExp(keyword, 'i')
+        console.log(myRegex.test(fullName))
+        return myRegex.test(fullName)
+      })
+
+      setFriendList(updatedFriendList)
+      setSelectedFriend(updatedFriendList[0])
+    }
+  }
+
   useEffect(() => {
     const usernameFromLocalStorage = localStorage.getItem('username')
 
@@ -55,6 +71,7 @@ const App = () => {
         onSelectedFriend,
         friendList,
         sendMessage,
+        onSearch,
       }}
     >
       <Routes />

@@ -7,6 +7,9 @@ const FriendsList = () => {
   const { friendList } = useContext(UserContext)
   return (
     <div className={styles.container}>
+      {friendList.length === 0 && (
+        <div className={styles.no_match}>No friends found!</div>
+      )}
       {friendList.map((friend) => (
         <Fragment key={friend.id}>
           <SingleFriend friend={friend} />
