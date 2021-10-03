@@ -1,0 +1,59 @@
+.container {
+  position: fixed;
+  right: 0;
+  top: 300px;
+}
+
+.info_btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #949494;
+  color: #fff;
+  margin-right: 20px;
+  padding: 15px;
+  opacity: 0.8;
+  border-radius: 3px;
+}
+
+.writer {
+  font-size: 14px;
+}
+
+.copyright {
+  font-size: 10px;
+}
+
+.hidden_area {
+  width: 300px;
+  background-color: #545454;
+  color: #eee;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.close_btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.links_container {
+  margin-top: 10px;
+}
+.link {
+  margin: 10px;
+  color: #eee;
+  cursor: pointer;
+}
+
+.about {
+  font-size: 10px;
+}

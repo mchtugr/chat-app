@@ -6,6 +6,7 @@ import { Redirect } from 'react-router-dom'
 import ChatHeader from '../components/ChatHeader'
 import MessageBox from '../components/MessageBox'
 import MessageForm from '../components/MessageForm'
+import HiddenFooter from '../components/HiddenFooter'
 
 const ChatPage = () => {
   const { user } = useLogin()
@@ -21,6 +22,7 @@ const ChatPage = () => {
         <MessageBox />
         <MessageForm />
       </RightScreen>
+      <HiddenFooter />
     </div>
   )
 }

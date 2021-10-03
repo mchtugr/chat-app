@@ -19,3 +19,7 @@ body {
 .scroll_btn {
   display: none;
 }
+
+.active {
+  box-shadow: inset 0px 0px 7px 0px rgba(130, 130, 130, 0.75);
+}

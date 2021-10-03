@@ -4,14 +4,19 @@ import UserContext from '../../context/userContext'
 
 const SingleFriend = (props) => {
   const { friend } = props
-  const { onSelectedFriend } = useContext(UserContext)
+  const { onSelectedFriend, selectedFriend } = useContext(UserContext)
   const fullName = friend.first_name + ' ' + friend.last_name
   const lastMessage = friend.messages[friend.messages.length - 1].text
   const handleClick = (id) => {
     onSelectedFriend(id)
   }
   return (
-    <div className={styles.container} onClick={() => handleClick(friend.id)}>
+    <div
+      className={`${styles.container} ${
+        selectedFriend.id === friend.id && 'active'
+      }`}
+      onClick={() => handleClick(friend.id)}
+    >
       <div className={styles.img_container}>
         <img
           src={`/avatars/${friend.username}.jpeg`}
