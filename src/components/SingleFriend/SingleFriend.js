@@ -36,9 +36,9 @@ const SingleFriend = (props) => {
         <div className={styles.username}>{fullName}</div>
         {/* last message */}
         <div className={styles.last_message}>
-          {lastMessage.length <= 25
+          {lastMessage.length <= 27
             ? lastMessage
-            : `${lastMessage.slice(0, 25)} ...`}
+            : `${lastMessage.slice(0, 27)} ...`}
         </div>
       </div>
     </div>

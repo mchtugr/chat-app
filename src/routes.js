@@ -1,12 +1,5 @@
 import React from 'react'
-import {
-  BrowserRouter as Router,
-  // Redirect,
-  // Link,
-  Switch,
-  Route,
-  // useLocation,
-} from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 
 import ChatPage from './pages/ChatPage'
 import LoginPage from './pages/LoginPage'

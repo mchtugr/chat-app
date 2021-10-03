@@ -51,7 +51,7 @@
         },
         {
           "id": "1c725973-0bdf-4b87-8413-7805a407a5ac",
-          "text": "Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Sollicitudin tempor id eu nisl nunc. Nunc sed augue lacus viverra vitae congue eu.",
+          "text": "Don't do the dance!",
           "sender": "001bb92c-fd82-4c6b-a3e2-76102557d6f0"
         }
       ]
@@ -69,7 +69,7 @@
         },
         {
           "id": "4dee4676-f40e-4671-876d-f7f910e4c0d2",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
+          "text": "It’s Like All My Life Everyone’s Told Me, ‘You’re A Shoe! You’re A Shoe! You’re A Shoe! Well, what if I don’t want to be a shoe? What if I wanna be a purse or a hat?",
           "sender": "7f5eb1ce-103a-4bce-b547-2f058872b9e9"
         }
       ]
@@ -84,6 +84,11 @@
           "id": "4dee4676-f40e-4671-876d-f7f910e4c0d2",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
           "sender": "d3eae56d-0c14-4045-b5e2-3ccd3c95e873"
+        },
+        {
+          "id": "4dee4676-f40e-4671-876d-askljadfsjdsf",
+          "text": "Smelly cat, Smelly cat, it's not your fault!",
+          "sender": "d3eae56d-0c14-4045-b5e2-3ccd3c95e873"
         }
       ]
     },
@@ -97,6 +102,11 @@
           "id": "4dee4676-f40e-4671-876d-f7f910e4c0d2",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
           "sender": "70742200-46b4-40fe-b93e-a73a48a92a0f"
+        },
+        {
+          "id": "4dee4676-f40e-ksdsad-876d-f7f910e4c0d2",
+          "text": "How you doing?",
+          "sender": "70742200-46b4-40fe-b93e-a73a48a92a0f"
         }
       ]
     },
@@ -107,8 +117,13 @@
       "username": "ross",
       "messages": [
         {
-          "id": "4dee4676-f40e-4671-876d-f7f910e4c0d2",
+          "id": "4dee4676-f40e-asdasd-876d-f7f910e4c0d2",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
+          "sender": "current_user"
+        },
+        {
+          "id": "4dee4676-f40e-4671-asdas-f7f910e4c0d2",
+          "text": "We were on a BREAK!!",
           "sender": "517f897a-a8b6-4664-8943-ac8bd97efff4"
         }
       ]
@@ -120,8 +135,18 @@
       "username": "mike",
       "messages": [
         {
-          "id": "4dee4676-f40e-4671-876d-f7f910e4c0d2",
+          "id": "asdf-f40e-4671-876d-f7f910e4c0d2",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
+          "sender": "350f8a89-aa6d-4127-afa5-d6c54fd5b2be"
+        },
+        {
+          "id": "asfsaf-f40e-4671-876d-f7f910e4c0d2",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim.",
+          "sender": "current_user"
+        },
+        {
+          "id": "asfsaf-f40e-4671-876d-f7f910e4c0d2",
+          "text": "What? Go back? To the land where time stands still?",
           "sender": "350f8a89-aa6d-4127-afa5-d6c54fd5b2be"
         }
       ]

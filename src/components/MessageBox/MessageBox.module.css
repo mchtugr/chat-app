@@ -16,6 +16,7 @@
 .message_received {
   width: 60%;
   background-color: #f3f3f4;
+  text-align: left;
   margin: 10px;
   padding: 15px;
   border-radius: 5px;
@@ -29,6 +30,7 @@
 }
 
 .message_sent {
+  text-align: left;
   width: 60%;
   align-self: flex-end;
   background-color: #6bb3fb;
