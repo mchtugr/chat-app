@@ -8,6 +8,11 @@
   position: relative;
 }
 
+.container_dark {
+  background-color: #7a7a7a;
+  color: #fff;
+}
+
 .message_received {
   width: 60%;
   background-color: #f3f3f4;
@@ -16,6 +21,11 @@
   border-radius: 5px;
   font-size: 14px;
   font-weight: 400;
+}
+
+.message_received_dark {
+  background-color: #515151;
+  color: #fbfbfb;
 }
 
 .message_sent {
@@ -30,15 +40,7 @@
   border-radius: 5px;
 }
 
-.icon_container {
-  position: fixed;
-  right: 10px;
-  bottom: 90px;
-  padding: 5px;
-  background-color: #f3f3f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-  opacity: 0.7;
+.message_sent_dark {
+  background-color: #4d8dc8;
+  color: #f6f6f6;
 }

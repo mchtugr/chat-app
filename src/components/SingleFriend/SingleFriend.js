@@ -1,10 +1,12 @@
 import React, { useContext } from 'react'
 import styles from './SingleFriend.module.css'
 import UserContext from '../../context/userContext'
+import ThemeContext from '../../context/themeContext'
 
 const SingleFriend = (props) => {
   const { friend } = props
   const { onSelectedFriend, selectedFriend } = useContext(UserContext)
+  const { theme } = useContext(ThemeContext)
   const fullName = friend.first_name + ' ' + friend.last_name
   const lastMessage = friend.messages[friend.messages.length - 1].text
   const handleClick = (id) => {
@@ -14,6 +16,8 @@ const SingleFriend = (props) => {
     <div
       className={`${styles.container} ${
         selectedFriend?.id === friend.id && 'active'
+      } ${theme === 'dark' && styles.container_dark} ${
+        theme === 'dark' && selectedFriend?.id === friend.id && 'active_dark'
       }`}
       onClick={() => handleClick(friend.id)}
     >

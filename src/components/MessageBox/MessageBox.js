@@ -1,31 +1,37 @@
 import React, { useContext } from 'react'
 import styles from './MessageBox.module.css'
 import UserContext from '../../context/userContext'
-import { BiArrowToTop } from 'react-icons/bi'
+import ThemeContext from '../../context/themeContext'
 const MessageBox = () => {
+  const { theme } = useContext(ThemeContext)
   const { selectedFriend } = useContext(UserContext)
-  const handleScroll = () => {
-    // window.scrollTo(0, 0)
-    document.querySelector('.scroll_btn').scrollTop = 0
-  }
 
   return (
-    <div className={`${styles.container} message_container`}>
+    <div
+      className={`${styles.container} ${
+        theme === 'dark' && styles.container_dark
+      } message_container`}
+    >
       {selectedFriend?.messages.map((msg) => {
+        let anotherMessageClass
         const messageClass =
           msg.sender === selectedFriend.id ? 'message_received' : 'message_sent'
+        if (theme === 'dark') {
+          if (messageClass === 'message_received') {
+            anotherMessageClass = 'message_received_dark'
+          } else {
+            anotherMessageClass = 'message_sent_dark'
+          }
+        }
         return (
-          <div key={msg.id} className={styles[messageClass]}>
+          <div
+            key={msg.id}
+            className={`${styles[messageClass]} ${styles[anotherMessageClass]}`}
+          >
             {msg.text}
           </div>
         )
       })}
-      <div
-        className={`${styles.icon_container} scroll_btn`}
-        onClick={handleScroll}
-      >
-        <BiArrowToTop size='40px' />
-      </div>
     </div>
   )
 }

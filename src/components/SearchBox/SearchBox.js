@@ -2,10 +2,12 @@ import React, { useState, useContext } from 'react'
 import UserContext from '../../context/userContext'
 import styles from './SearchBox.module.css'
 import { GrClose } from 'react-icons/gr'
+import ThemeContext from '../../context/themeContext'
 
 const SearchBox = () => {
   const [keyword, setKeyword] = useState('')
   const { onSearch } = useContext(UserContext)
+  const { theme } = useContext(ThemeContext)
 
   const handleSearch = (e) => {
     setKeyword(e.target.value)
@@ -25,7 +27,7 @@ const SearchBox = () => {
           type='text'
           value={keyword}
           onChange={handleSearch}
-          className={styles.input}
+          className={`${styles.input} ${theme === 'dark' && styles.input_dark}`}
           placeholder='Search'
         />
         {keyword.length > 0 && (

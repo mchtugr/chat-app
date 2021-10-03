@@ -5,6 +5,12 @@
   flex-direction: row;
   height: 70px;
   padding: 0 25px;
+  background-color: #f3f3f3;
+}
+
+.container_dark {
+  background-color: #6a6a6a;
+  color: #fff;
 }
 
 .user_detail_container {

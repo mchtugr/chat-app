@@ -3,6 +3,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  border-top: 1px solid #ebebeb;
+}
+
+.container_dark {
+  border-top: 1px solid #6a6a6a;
 }
 
 .icon_container {
@@ -10,7 +15,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #acacac;
+  background-color: #d6d6d6;
   margin-right: 10px;
   color: #fff;
+  cursor: pointer;
+}
+
+.icon_container_dark {
+  background-color: #7a7a7a;
 }

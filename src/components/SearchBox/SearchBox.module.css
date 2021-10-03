@@ -11,7 +11,6 @@
   display: flex;
   align-items: center;
   margin: 10px 0;
-  border: 1px solid #d4d4d4;
   justify-content: center;
   position: relative;
 }
@@ -22,7 +21,15 @@
   border: none;
   padding: 10px;
   padding-left: 15px;
+  background-color: #f3f3f3;
+  border: 1px solid #d4d4d4;
 }
+
+.input_dark {
+  background-color: #7a7a7a;
+  border: 1px solid #6a6a6a;
+}
+
 .input:focus {
   outline: none;
 }

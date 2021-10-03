@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import ThemeContext from '../../context/themeContext'
 import styles from './RightScreen.module.css'
 
 const RightScreen = (props) => {
   const { children } = props
-  return <div className={styles.container}>{children}</div>
+  const { theme } = useContext(ThemeContext)
+  return (
+    <div
+      className={`${styles.container} ${
+        theme === 'dark' && styles.container_dark
+      }`}
+    >
+      {children}
+    </div>
+  )
 }
 
 export default RightScreen

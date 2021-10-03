@@ -1,9 +1,14 @@
 .container {
   height: 60px;
   text-align: center;
-  border-top: 1px solid #d4d4d4;
+  border-top: 1px solid #ebebeb;
   background-color: #fff;
   display: flex;
+}
+
+.container_dark {
+  background-color: #7a7a7a;
+  border-top: 1px solid #6a6a6a;
 }
 
 .form {
@@ -24,7 +29,7 @@
 .input {
   width: 100%;
   padding: 10px 15px;
-  background-color: #f3f3f4;
+  background-color: #f3f3f3;
   border: none;
 }
 
@@ -38,4 +43,9 @@
   border: none;
   color: #fff;
   margin-left: 10px;
+}
+
+.btn_dark {
+  background-color: #4d8dc8;
+  color: #f6f6f6;
 }

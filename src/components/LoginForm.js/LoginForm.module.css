@@ -6,6 +6,11 @@
   width: 100vw;
 }
 
+.container_dark {
+  background-color: #515151;
+  color: #fff;
+}
+
 .header {
   font-size: 18px;
   font-weight: 500;
@@ -22,19 +27,29 @@
   padding: 15px;
   width: 400px;
   margin-bottom: 10px;
-  background-color: #f3f3f4;
+  background-color: #f3f3f3;
   border: none;
 }
 
+.input_dark {
+  background-color: #7a7a7a;
+  color: #fff;
+}
+
 .input:focus {
-  outline-color: #7cc4fc;
+  outline: none;
 }
 
 .btn {
   padding: 15px;
   width: 430px;
   border: none;
-  background-color: #6bb3fb;
+  background-color: #68b7ff;
   text-transform: uppercase;
   color: #fff;
+}
+
+.btn_dark {
+  background-color: #4d8dc8;
+  color: #f6f6f6;
 }

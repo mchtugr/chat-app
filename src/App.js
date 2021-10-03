@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react'
 import Routes from './routes'
 import UserContext from './context/userContext'
 import data from './mock-users.json'
+import ThemeContext from './context/themeContext'
 
 const App = () => {
   const [user, setUser] = useState(null)
   const [friendList, setFriendList] = useState(data.users)
   const [selectedFriend, setSelectedFriend] = useState(friendList[0])
+  const [theme, setTheme] = useState('dark')
 
   const login = (username) => {
     setUser(username)
@@ -51,6 +53,11 @@ const App = () => {
     }
   }
 
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+  }
+
   useEffect(() => {
     const usernameFromLocalStorage = localStorage.getItem('username')
 
@@ -61,20 +68,22 @@ const App = () => {
   }, [])
 
   return (
-    <UserContext.Provider
-      value={{
-        user,
-        login,
-        logout,
-        selectedFriend,
-        onSelectedFriend,
-        friendList,
-        sendMessage,
-        onSearch,
-      }}
-    >
-      <Routes />
-    </UserContext.Provider>
+    <ThemeContext.Provider value={{ theme, switchTheme }}>
+      <UserContext.Provider
+        value={{
+          user,
+          login,
+          logout,
+          selectedFriend,
+          onSelectedFriend,
+          friendList,
+          sendMessage,
+          onSearch,
+        }}
+      >
+        <Routes />
+      </UserContext.Provider>
+    </ThemeContext.Provider>
   )
 }
 

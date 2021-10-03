@@ -4,7 +4,13 @@
   align-items: center;
   background-color: #fff;
   padding: 10px;
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.container_dark {
+  background-color: #7a7a7a;
+  color: #fff;
+  border-bottom: 1px solid #6a6a6a;
 }
 
 .container:last-child {
@@ -35,7 +41,7 @@
 }
 
 .last_message {
-  color: #d4d4d4;
+  color: #c8c8c8;
   font-size: 14px;
   font-weight: 400;
 }

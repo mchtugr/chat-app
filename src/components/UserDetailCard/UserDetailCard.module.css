@@ -5,7 +5,11 @@
   align-items: center;
   flex-direction: column;
   padding: 20px 15px;
-  background-color: #e4e4e4;
-  color: #6eb5fb;
+  background-color: #e6e6e6;
+  color: #68b7ff;
   margin: 10px;
+}
+
+.container_dark {
+  background-color: #7a7a7a;
 }

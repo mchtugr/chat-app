@@ -6,8 +6,9 @@ body {
 }
 
 ::placeholder {
-  color: #acacac;
+  color: #c8c8c8;
   font-size: 14px;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -22,6 +23,10 @@ body {
 
 .active {
   box-shadow: inset 0px 0px 7px 0px rgba(130, 130, 130, 0.75);
+}
+
+.active_dark {
+  box-shadow: inset 0px 0px 7px 0px rgba(220, 220, 220, 0.75);
 }
 /* 
 .dark_mode {

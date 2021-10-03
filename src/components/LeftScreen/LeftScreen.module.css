@@ -3,5 +3,9 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #f3f3f4;
+  background-color: #f3f3f3;
+}
+
+.container_dark {
+  background-color: #6a6a6a;
 }

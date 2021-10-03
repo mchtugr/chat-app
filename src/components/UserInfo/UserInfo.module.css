@@ -6,11 +6,18 @@
   align-items: center;
 }
 
+.container_dark {
+  background-color: #6a6a6a;
+  color: #fff;
+  border-left: 1px solid #7a7a7a;
+  position: relative;
+  left: -2px;
+}
+
 .exit_btn {
   position: fixed;
-  top: 20px;
-  right: 30px;
-  color: #7cc4fc;
+  top: 18px;
+  right: 25px;
 }
 
 .detail_container {
@@ -37,7 +44,7 @@
   margin-top: 10px;
   font-size: 14px;
   font-weight: 400;
-  color: #d4d4d4;
+  color: #c8c8c8;
 }
 
 .contact_methods {
@@ -45,4 +52,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contact_methods > div {
+  cursor: pointer;
 }
