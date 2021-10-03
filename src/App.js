@@ -8,7 +8,7 @@ const App = () => {
   const [user, setUser] = useState(null)
   const [friendList, setFriendList] = useState(data.users)
   const [selectedFriend, setSelectedFriend] = useState(friendList[0])
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
 
   // login user
   const login = (username) => {
