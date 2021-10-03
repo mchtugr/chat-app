@@ -1,0 +1,11 @@
+.container {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 15px;
+  background-color: #e4e4e4;
+  color: #6eb5fb;
+  margin: 10px;
+}

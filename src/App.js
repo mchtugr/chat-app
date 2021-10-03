@@ -19,7 +19,7 @@ const App = () => {
   }
 
   const onSelectedFriend = (id) => {
-    const currentFriend = data.users.find((friend) => friend.id === id)
+    const currentFriend = friendList.find((friend) => friend.id === id)
     setSelectedFriend(currentFriend)
   }
 
@@ -38,7 +38,7 @@ const App = () => {
 
     setFriendList(updatedFriendList)
     const messageContainer = document.querySelector('.message_container')
-    messageContainer.scrollTop = messageContainer.scrollHeight
+    messageContainer.scrollTop = messageContainer.scrollHeight + 300
   }
 
   useEffect(() => {

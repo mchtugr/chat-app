@@ -15,3 +15,7 @@ body {
   width: 100vw;
   display: flex;
 }
+
+.scroll_btn {
+  display: none;
+}

@@ -1,0 +1,47 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.exit_btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  color: #7cc4fc;
+}
+
+.detail_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.username {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.last_seen {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #d4d4d4;
+}
+
+.contact_methods {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

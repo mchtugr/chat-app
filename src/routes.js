@@ -20,7 +20,7 @@ const Routes = () => {
         <Route path='/' exact component={StartPage} />
         <Route path='/login' component={LoginPage} />
         <Route path='/chat' component={ChatPage} />
-        <Route path='/chat/:userId' component={UserDetailsPage} />
+        <Route path='/user/:userId' component={UserDetailsPage} />
       </Switch>
     </Router>
   )

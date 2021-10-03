@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import styles from './SingleFriend.module.css'
 import UserContext from '../../context/userContext'
-import { v4 as uuid } from 'uuid'
 
 const SingleFriend = (props) => {
   const { friend } = props
