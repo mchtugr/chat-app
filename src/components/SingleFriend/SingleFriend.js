@@ -13,7 +13,7 @@ const SingleFriend = (props) => {
   return (
     <div
       className={`${styles.container} ${
-        selectedFriend.id === friend.id && 'active'
+        selectedFriend?.id === friend.id && 'active'
       }`}
       onClick={() => handleClick(friend.id)}
     >

@@ -11,13 +11,13 @@ const ChatHeader = () => {
     history.push(`/user/${selectedFriend.id}`)
   }
 
-  const fullName = selectedFriend.first_name + ' ' + selectedFriend.last_name
+  const fullName = selectedFriend?.first_name + ' ' + selectedFriend?.last_name
   return (
     <div className={styles.container}>
       <div className={styles.user_detail_container}>
         <div className={styles.img_container}>
           <img
-            src={`/avatars/${selectedFriend.username}.jpeg`}
+            src={`/avatars/${selectedFriend?.username}.jpeg`}
             alt='avatar'
             className={styles.avatar}
           />

@@ -11,7 +11,7 @@ const MessageBox = () => {
 
   return (
     <div className={`${styles.container} message_container`}>
-      {selectedFriend.messages.map((msg) => {
+      {selectedFriend?.messages.map((msg) => {
         const messageClass =
           msg.sender === selectedFriend.id ? 'message_received' : 'message_sent'
         return (

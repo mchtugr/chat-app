@@ -48,7 +48,6 @@ const App = () => {
       })
 
       setFriendList(updatedFriendList)
-      setSelectedFriend(updatedFriendList[0])
     }
   }
 
