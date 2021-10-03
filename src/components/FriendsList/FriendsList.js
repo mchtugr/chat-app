@@ -7,6 +7,7 @@ const FriendsList = () => {
   const { friendList } = useContext(UserContext)
   return (
     <div className={styles.container}>
+      {/* if no match, render error! */}
       {friendList.length === 0 && (
         <div className={styles.no_match}>No friends found!</div>
       )}

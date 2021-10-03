@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import UserContext from '../../context/userContext'
 import styles from './SearchBox.module.css'
-import { GrClose } from 'react-icons/gr'
+import { AiOutlineClose } from 'react-icons/ai'
 import ThemeContext from '../../context/themeContext'
 
 const SearchBox = () => {
@@ -21,7 +21,11 @@ const SearchBox = () => {
     onSearch('')
   }
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} ${
+        theme === 'dark' && styles.container_dark
+      }`}
+    >
       <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
         <input
           type='text'
@@ -30,9 +34,10 @@ const SearchBox = () => {
           className={`${styles.input} ${theme === 'dark' && styles.input_dark}`}
           placeholder='Search'
         />
+        {/* if input is not empty, show a clear btn */}
         {keyword.length > 0 && (
           <div className={styles.delete_btn} onClick={handleClear}>
-            <GrClose />
+            <AiOutlineClose size='18px' />
           </div>
         )}
       </form>

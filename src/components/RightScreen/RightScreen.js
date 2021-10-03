@@ -11,6 +11,7 @@ const RightScreen = (props) => {
         theme === 'dark' && styles.container_dark
       }`}
     >
+      {/* child components here */}
       {children}
     </div>
   )

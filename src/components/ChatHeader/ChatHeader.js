@@ -10,10 +10,12 @@ const ChatHeader = () => {
   const { theme } = useContext(ThemeContext)
   const history = useHistory()
   const handleClick = () => {
+    // when three dots clicked, redirect to selected user detail page
     history.push(`/user/${selectedFriend.id}`)
   }
 
   const fullName = selectedFriend?.first_name + ' ' + selectedFriend?.last_name
+
   return (
     <div
       className={`${styles.container} ${
@@ -21,6 +23,7 @@ const ChatHeader = () => {
       }`}
     >
       <div className={styles.user_detail_container}>
+        {/* profile pic */}
         <div className={styles.img_container}>
           <img
             src={`/avatars/${selectedFriend?.username}.jpeg`}
@@ -28,8 +31,11 @@ const ChatHeader = () => {
             className={styles.avatar}
           />
         </div>
+        {/* selected friend full name */}
         <div className={styles.username}>{fullName}</div>
       </div>
+
+      {/* show detail btn */}
       <div onClick={handleClick}>
         <HiOutlineDotsHorizontal size='30px' />
       </div>

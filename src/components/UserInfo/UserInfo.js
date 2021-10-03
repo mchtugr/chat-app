@@ -22,6 +22,7 @@ const UserInfo = () => {
         theme === 'dark' && styles.container_dark
       }`}
     >
+      {/* go back to chat page */}
       <div className={styles.exit_btn} onClick={handleGoBack}>
         <AiOutlineClose size='30px' />
       </div>
@@ -32,15 +33,21 @@ const UserInfo = () => {
           className={styles.img}
         />
         <div className={styles.username}>{fullName}</div>
-        <div className={styles.last_seen}>last seen: 15 min ago</div>
+        <div className={styles.last_seen}>
+          {/* random last seen time */}
+          last seen: {Math.floor(Math.random() * 59) + 1} min ago
+        </div>
       </div>
       <div className={styles.contact_methods}>
+        {/* Message Contact*/}
         <UserDetailCard contactMethod='Message'>
           <BsChat />
         </UserDetailCard>
+        {/* Call Contact*/}
         <UserDetailCard contactMethod='Call'>
           <FiPhone />
         </UserDetailCard>
+        {/* Video Chat Contact */}
         <UserDetailCard contactMethod='Video'>
           <BsCameraVideo />
         </UserDetailCard>

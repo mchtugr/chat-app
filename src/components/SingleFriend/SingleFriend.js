@@ -8,7 +8,9 @@ const SingleFriend = (props) => {
   const { onSelectedFriend, selectedFriend } = useContext(UserContext)
   const { theme } = useContext(ThemeContext)
   const fullName = friend.first_name + ' ' + friend.last_name
+  // even user sent new messages, shows the last one
   const lastMessage = friend.messages[friend.messages.length - 1].text
+  // select current friend
   const handleClick = (id) => {
     onSelectedFriend(id)
   }
@@ -21,6 +23,7 @@ const SingleFriend = (props) => {
       }`}
       onClick={() => handleClick(friend.id)}
     >
+      {/* profile pic */}
       <div className={styles.img_container}>
         <img
           src={`/avatars/${friend.username}.jpeg`}
@@ -29,7 +32,9 @@ const SingleFriend = (props) => {
         />
       </div>
       <div className={styles.text_container}>
+        {/* full name */}
         <div className={styles.username}>{fullName}</div>
+        {/* last message */}
         <div className={styles.last_message}>
           {lastMessage.length <= 25
             ? lastMessage

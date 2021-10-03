@@ -14,6 +14,9 @@ const MessageBox = () => {
     >
       {selectedFriend?.messages.map((msg) => {
         let anotherMessageClass
+        {
+          /* check whether message is sent or received and style accordingly */
+        }
         const messageClass =
           msg.sender === selectedFriend.id ? 'message_received' : 'message_sent'
         if (theme === 'dark') {

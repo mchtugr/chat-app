@@ -11,6 +11,7 @@ const UserDetailCard = (props) => {
         theme === 'dark' && styles.container_dark
       }`}
     >
+      {/* show child components */}
       <span>{children}</span>
       <span>{contactMethod}</span>
     </div>

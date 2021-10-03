@@ -13,6 +13,7 @@ const Settings = () => {
         theme === 'dark' && styles.container_dark
       }`}
     >
+      {/* toggle btn for theme */}
       <div
         className={`${styles.icon_container} ${
           theme === 'dark' && styles.icon_container_dark
@@ -21,6 +22,7 @@ const Settings = () => {
       >
         {theme === 'light' ? <FiMoon /> : <FiSun />}
       </div>
+      {/* logout btn */}
       <div
         className={`${styles.icon_container} ${
           theme === 'dark' && styles.icon_container_dark

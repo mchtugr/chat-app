@@ -19,6 +19,7 @@ const HiddenFooter = () => {
     footerRef.current.style.display = 'none'
   }
   return (
+    // shows info about coder
     <footer className={styles.container}>
       <div
         ref={iconRef}
@@ -29,7 +30,7 @@ const HiddenFooter = () => {
       >
         <BsInfoSquareFill size='25px' />
       </div>
-
+      {/* is displayed when user clicked info btn */}
       <div ref={footerRef} className={styles.hidden_area}>
         <span onClick={closeFooter} className={styles.close_btn}>
           <AiOutlineClose size='20px' />
@@ -40,11 +41,13 @@ const HiddenFooter = () => {
         <div className={styles.about}>
           Kodluyoruz JavaScript & React Bootcamp Chat App Project
         </div>
+        {/* copyright current year automatically */}
         <div className={styles.copyright}>
           <span>&copy;{new Date().getFullYear()}</span>
         </div>
 
         <div className={styles.links_container}>
+          {/* GitHub Profile */}
           <a
             href='https://github.com/murtazaaylak'
             target='_blank'
@@ -52,6 +55,7 @@ const HiddenFooter = () => {
           >
             <FaGithub size='30px' />
           </a>
+          {/* Linkedin Profile */}
           <a
             href='https://www.linkedin.com/in/mchtugr/'
             target='_blank'
