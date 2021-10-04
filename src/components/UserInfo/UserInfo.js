@@ -13,8 +13,8 @@ const UserInfo = () => {
   const { theme } = useContext(ThemeContext)
   const fullName = selectedFriend.first_name + ' ' + selectedFriend.last_name
   const history = useHistory()
-  const handleGoBack = () => {
-    history.goBack()
+  const handleGoChatPage = () => {
+    history.push('/chat')
   }
   return (
     <div
@@ -23,7 +23,7 @@ const UserInfo = () => {
       }`}
     >
       {/* go back to chat page */}
-      <div className={styles.exit_btn} onClick={handleGoBack}>
+      <div className={styles.exit_btn} onClick={handleGoChatPage}>
         <AiOutlineClose size='30px' />
       </div>
       <div className={styles.detail_container}>
