@@ -10,6 +10,10 @@ const App = () => {
   const [selectedFriend, setSelectedFriend] = useState(friendList[0])
   const [theme, setTheme] = useState('light')
 
+  if (theme === 'dark') {
+    document.body.style.backgroundColor = '#6A6A6A'
+  }
+
   // login user
   const login = (username) => {
     setUser(username)
