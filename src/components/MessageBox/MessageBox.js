@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import styles from './MessageBox.module.css'
 import UserContext from '../../context/userContext'
 import ThemeContext from '../../context/themeContext'
+import { BsCheckAll } from 'react-icons/bs'
 const MessageBox = () => {
   const { theme } = useContext(ThemeContext)
   const { selectedFriend } = useContext(UserContext)
@@ -32,6 +33,9 @@ const MessageBox = () => {
             className={`${styles[messageClass]} ${styles[anotherMessageClass]}`}
           >
             {msg.text}
+            <div className={styles.double_check}>
+              {msg.sender !== selectedFriend.id && <BsCheckAll size='16px' />}
+            </div>
           </div>
         )
       })}

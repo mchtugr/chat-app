@@ -41,6 +41,8 @@
 }
 
 .last_message {
+  display: flex;
+  align-items: center;
   color: #c8c8c8;
   font-size: 14px;
   font-weight: 400;

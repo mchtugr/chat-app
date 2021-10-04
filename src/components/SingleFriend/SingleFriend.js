@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import styles from './SingleFriend.module.css'
 import UserContext from '../../context/userContext'
 import ThemeContext from '../../context/themeContext'
+import { BsCheckAll } from 'react-icons/bs'
 
 const SingleFriend = (props) => {
   const { friend } = props
@@ -9,7 +10,7 @@ const SingleFriend = (props) => {
   const { theme } = useContext(ThemeContext)
   const fullName = friend.first_name + ' ' + friend.last_name
   // even user sent new messages, shows the last one
-  const lastMessage = friend.messages[friend.messages.length - 1].text
+  const lastMessage = friend.messages[friend.messages.length - 1]
   // select current friend
   const handleClick = (id) => {
     onSelectedFriend(id)
@@ -36,9 +37,14 @@ const SingleFriend = (props) => {
         <div className={styles.username}>{fullName}</div>
         {/* last message */}
         <div className={styles.last_message}>
-          {lastMessage.length <= 27
-            ? lastMessage
-            : `${lastMessage.slice(0, 27)} ...`}
+          <span className='center'>
+            {lastMessage.sender === 'current_user' && (
+              <BsCheckAll size='16px' />
+            )}
+          </span>
+          {lastMessage.text.length <= 27
+            ? lastMessage.text
+            : `${lastMessage.text.slice(0, 27)} ...`}
         </div>
       </div>
     </div>

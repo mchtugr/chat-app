@@ -11,12 +11,12 @@ import { useHistory } from 'react-router-dom'
 
 const UserDetailsPage = () => {
   const { user } = useLogin()
-  const history = useHistory()
-  const { selectedFriend } = useContext(UserContext)
+  // const history = useHistory()
+  // const { selectedFriend } = useContext(UserContext)
 
-  useEffect(() => {
-    history.push(`/user/${selectedFriend.id}`)
-  }, [selectedFriend])
+  // useEffect(() => {
+  //   history.push(`/user/${selectedFriend.id}`)
+  // }, [selectedFriend])
 
   if (!user) {
     return <Redirect to='/login' />

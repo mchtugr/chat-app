@@ -28,6 +28,13 @@ body {
 .active_dark {
   box-shadow: inset 0px 0px 7px 0px rgba(220, 220, 220, 0.75);
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3px;
+}
 /* 
 .dark_mode {
   background-color: #545454;
