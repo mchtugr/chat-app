@@ -31,8 +31,10 @@
 .text_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  height: 50px;
   flex: 3;
+  overflow: hidden;
 }
 
 .username {
