@@ -34,6 +34,7 @@ const MessageForm = () => {
             placeholder='Type'
             value={text}
             className={styles.input}
+            id='message_input'
             onChange={(e) => setText(e.target.value)}
           />
         </div>

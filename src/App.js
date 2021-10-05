@@ -49,6 +49,7 @@ const App = () => {
     // scroll to bottom when new messages appear if content overflow
     const messageContainer = document.querySelector('.message_container')
     messageContainer.scrollTop = messageContainer.scrollHeight + 300
+    document.getElementById('message_input').focus()
   }
 
   // search friends

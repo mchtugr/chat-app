@@ -14,6 +14,8 @@ const SingleFriend = (props) => {
   // select current friend
   const handleClick = (id) => {
     onSelectedFriend(id)
+    // auto focus on input when selectedFriend changes
+    document.getElementById('message_input')?.focus()
   }
   return (
     <div
