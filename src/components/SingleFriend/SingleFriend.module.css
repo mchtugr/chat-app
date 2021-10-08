@@ -49,3 +49,10 @@
   font-size: 14px;
   font-weight: 400;
 }
+
+.check_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3px;
+}

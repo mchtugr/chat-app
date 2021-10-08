@@ -39,6 +39,9 @@ const SingleFriend = (props) => {
         <div className={styles.username}>{fullName}</div>
         {/* last message */}
         <div className={styles.last_message}>
+          <span className={styles.check_container}>
+            {lastMessage.sender === 'current_user' && <BsCheckAll />}
+          </span>
           {lastMessage.text.length <= 270
             ? lastMessage.text
             : `${lastMessage.text.slice(0, 27)} ...`}
